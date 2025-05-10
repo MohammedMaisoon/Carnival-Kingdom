@@ -1,0 +1,1 @@
+Carnival Kingdom: A responsive theme park website featuring ride categorization (water/land), ticket booking, user authentication, and contact forms. Includes intuitive navigation, mobile-friendly design, and ride displays. Perfect for amusement parks seeking to provide visitors with comprehensive information and online services.
