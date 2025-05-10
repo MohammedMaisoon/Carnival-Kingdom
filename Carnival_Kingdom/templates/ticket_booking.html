@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Kingdom</title>
+    <link rel="stylesheet" href="static/css/styles2.css">
+    <script src="static/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Carnival Kingdom</h1>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li><a href="{{ url_for('rides')}}">Rides</a></li>
+                <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                <li><a href="{{ url_for('login')}}">Login</a></li>
+                <li><a href="{{ url_for('ticket_booking')}}">Book Tickets</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Book Your Tickets</h2>
+        <form id="ticketForm"
+            action="{{ url_for('ticket_booking') }}" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+
+            <label for="visit-date">Preferred Visit Date:</label>
+            <input type="date" id="visit-date" name="visit-date" required>
+
+            <label for="ticket-type">Select Ticket Type:</label>
+            <select id="ticket-type" name="ticket-type" required>
+                <option value="standard">Standard - $30</option>
+                <option value="vip">VIP - $50</option>
+                <option value="children">Children - $15</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Carnival Kingdom. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

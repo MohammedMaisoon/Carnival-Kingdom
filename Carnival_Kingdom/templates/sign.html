@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Kingdom</title>
+    <link rel="stylesheet" href="static\css\sign.css">
+    <!-- Add any additional CSS links here -->
+    <script src="static/sign.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" aria-label="Carnival Kingdom logo">
+                <h1>Carnival Kingdom</h1>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('rides') }}">Rides</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('ticket_booking')}}">Book Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <h2>Welcome to Carnival Kingdom!</h2>
+            <p class="slogan">Sign up to join the fun and magic!</p>
+        </div>
+
+        <!-- Sign Up Section -->
+        <div class="signup-container">
+            <div class="logo">
+                <img src="static/css/image/logo.jpg" alt="Carnival Kingdom logo" aria-label="Carnival Kingdom logo">
+            </div>
+
+            <form id="signupForm" method="POST" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your desired username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                <div class="input-group remember-me">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+
+                <button type="submit">Create Account</button>
+                <p class="forgot-password"><a href="{{ url_for('login') }}">Already have an account? Login</a></p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Carnival Kingdom. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+    </footer>
+
+
+</body>
+
+</html>

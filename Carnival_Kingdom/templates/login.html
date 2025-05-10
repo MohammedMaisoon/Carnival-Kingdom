@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Kingdom Login</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/login.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Carnival Kingdom</h1> 
+            </div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('rides') }}">Rides</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('ticket_booking')}}">Book Tickets</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Welcome to Carnival Kingdom!</h2>
+        <p class="slogan">Login to experience the magic!</p>
+    </div>
+
+    <!-- Login Section -->
+    <div class="login-container">
+        <div class="logo">
+            <img src="static/css/image/logo.jpg" alt="Carnival Kingdom logo with colorful carnival elements" class="logo-img">
+        </div>
+
+        <form id="loginForm" method="POST" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="input-group remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember me</label>
+            </div>
+
+            <button type="submit">Login</button>
+            <p class=""><a href="{{ url_for('sign')}}">Don't have an account? Register Here.....</a></p>
+        </form>
+    </div>
+
+    <!-- Decorations Section -->
+    <div class="decorations">
+        <div class="carnival-left"></div>
+        <div class="carnival-right"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Carnival Kingdom. All rights reserved.</p>
+    </footer>
+
+  
+</body>
+</html>

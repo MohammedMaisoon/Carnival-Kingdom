@@ -1,0 +1,210 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FFD700;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+
+
+.cta-button {
+    background-color: #003366;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff6600;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us h3 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Rides Section */
+.rides {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e9e9e9;
+}
+
+.rides h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.ride-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ride-card {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ride-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ride-card h4 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.ride-card p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-color: #FFD700;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 12px 25px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #ff6600;
+}
+
+/* Footer Section */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.message-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+
+}
+
+.message-section h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-color: #FFD700;
+}

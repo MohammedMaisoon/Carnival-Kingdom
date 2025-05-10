@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Kingdom</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <link rel="stylesheet" href="static/css/styles1.css"> 
+    
+    
+    <script src="static/js/script.js" defer></script>
+    
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('water') }}">Water Rides</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('land') }}">Land Rides</a></li>
+          
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('all') }}">All</a></li>
+        </ul>
+    </nav>
+    
+    <section id="rides" class="rides">
+        <h3>Our Amazing Rides</h3>
+        <div class="ride-cards">
+            <div class="ride-card">
+                <img src="static\css\image\Roller Coaster.jpg" alt="Roller Coaster">
+                <h4>Roller Coaster</h4>
+                <p>A thrilling ride for adrenaline junkies!</p>
+            </div>
+            <div class="ride-card">
+                <img src="static/css/image/Ferris Wheel.jpg" alt="Ferris Wheel">
+                <h4>Ferris Wheel</h4>
+                <p>Enjoy breathtaking views from the top!</p>
+            </div>
+            <div class="ride-card">
+                <img src="static\css\image\Carousel.jpg" alt="Carousel">
+                <h4>Carousel</h4>
+                <p>Perfect for families and little ones.</p>
+            </div>
+            <div class="ride-card">
+                <img src="static/css/image/crimson cyclone.jpg" alt="Crimson cyclone">
+                <h4>Crimson cyclone</h4>
+                <p>Feel the rush as you soar through the twists.</p>
+            </div>
+            <div class="ride-card">
+                <img src="static/css/image/vortexvoyage.jpg" alt="vortex voyage">
+                <h4>vortex voyage</h4>
+                <p>Embark on a thrilling whirlwind journey!.</p>
+            </div>
+            <div class="ride-card">
+                <img src="static/css/image/dashing car.jpg" alt="dashing car">
+                <h4>dashing car</h4>
+                <p>Zoom into fun on Dashing Cars!.</p>
+            </div>
+            <div class="ride-card">
+                <img src="static/css/image/haunted house.jpg" alt="haunted house">
+                <h4>haunted house</h4>
+                <p>Brave the Haunted House for thrills!.</p>
+            </div>
+            <div class="ride-card">
+                <img src="static/css/image/iron serpent.jpg" alt="iron serpent">
+                <h4>iron serpent</h4>
+                <p>Feel the rush of unstoppable speed!.</p>
+            </div>
+            <div class="ride-card">
+                <img src="static/css/image/vr coaster.jpg" alt="vr coaster">
+                <h4>vr coaster</h4>
+                <p>drown imaginable world to this ride!.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,217 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FFD700;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #003366;  /* Dark color for better contrast */
+}
+
+.hero p.slogan {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+    color: #333;  /* Slightly darker for better readability */
+}
+
+/* Sign Up Section */
+.signup-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-container .logo img {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group input:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+/* Remember Me Checkbox */
+.input-group.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.input-group.remember-me input {
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+button:focus {
+    outline: 3px solid #ff6600;  /* Make the focus ring prominent */
+}
+
+/* Forgot Password */
+.forgot-password {
+    font-size: 1em;
+}
+
+.forgot-password a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;  /* Push footer to the bottom */
+}
+
+footer p a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .signup-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p.slogan {
+        font-size: 1em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p.slogan {
+        font-size: 0.9em;
+    }
+}
+
+/* Form validation feedback */
+.input-group input:invalid {
+    border-color: #ff6666;
+}
+
+.input-group input:valid {
+    border-color: #66cc66;
+}

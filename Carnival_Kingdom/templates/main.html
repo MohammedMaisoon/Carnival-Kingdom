@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Kingdom</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <script src="static/js/script.js" defer></script>
+</head>
+<body>
+      <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Carnival Kingdom</h1>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li><a href="{{ url_for('rides')}}">Rides</a></li>
+                <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                <li><a href="{{ url_for('login')}}">Login</a></li>
+                <li><a href="{{ url_for('sign')}}">Sign Up</a></li>
+                <li><a href="{{ url_for('ticket_booking')}}">Book Tickets</a></li>
+        
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('water') }}">Water Rides</a></li>
+                <li><a href="{{ url_for('land') }}">Land Rides</a></li>
+               
+                <li><a href="{{ url_for('all') }}">ALL</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Rides Section -->
+        <section id="rides" class="rides">
+            <h3>Our Amazing Rides</h3>
+            <div class="ride-cards">
+                <div class="ride-card">
+                    <img src="static\css\image\Roller Coaster.jpg" alt="Roller Coaster">
+                    <h4>Roller Coaster</h4>
+                    <p>A thrilling ride for adrenaline junkies!</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/Ferris Wheel.jpg" alt="Ferris Wheel">
+                    <h4>Ferris Wheel</h4>
+                    <p>Enjoy breathtaking views from the top!</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static\css\image\Carousel.jpg" alt="Carousel">
+                    <h4>Carousel</h4>
+                    <p>Perfect for families and little ones.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/crimson cyclone.jpg" alt="Crimson cyclone">
+                    <h4>Crimson cyclone</h4>
+                    <p>Feel the rush as you soar through the twists.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/vortexvoyage.jpg" alt="vortex voyage">
+                    <h4>vortex voyage</h4>
+                    <p>Embark on a thrilling whirlwind journey!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/dashing car.jpg" alt="dashing car">
+                    <h4>dashing car</h4>
+                    <p>Zoom into fun on Dashing Cars!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/haunted house.jpg" alt="haunted house">
+                    <h4>haunted house</h4>
+                    <p>Brave the Haunted House for thrills!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/iron serpent.jpg" alt="iron serpent">
+                    <h4>iron serpent</h4>
+                    <p>Feel the rush of unstoppable speed!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/vr coaster.jpg" alt="vr coaster">
+                    <h4>vr coaster</h4>
+                    <p>drown imaginable world to this ride!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/wave pool.jpg" alt="wave pool">
+                    <h4>wave pool</h4>
+                    <p>Artificial wave pool: Surfing thrill unleashed!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/water coaster.jpg" alt="water coaster">
+                    <h4>water coaster</h4>
+                    <p>Thrilling ride with exhilarating drops and splashes!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/rain disco.jpg" alt="rain disco">
+                    <h4>rain disco</h4>
+                    <p>Dancing under vibrant lights and showers!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/lazy river.jpg" alt="lazy river">
+                    <h4>lazy river</h4>
+                    <p>Relaxing float along a gentle, winding river!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/kids swim.jpg" alt="kids swim">
+                    <h4>kids swim</h4>
+                    <p>Splashing fun and energy in the pool !.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/free fall.jpg" alt="free fall">
+                    <h4>free fall</h4>
+                    <p>>"Heart-pounding descent with an adrenaline rush!</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/family slide.jpg" alt="family slide">
+                    <h4>family slide</h4>
+                    <p>Exciting family fun on a water slide!.</p>
+                </div>
+                <div class="ride-card">
+                    <img src="static/css/image/falls.jpg" alt="falls">
+                    <h4>falls</h4>
+                    <p>Majestic waterfalls cascading with power and beauty!.</p>
+                </div>
+            </div>
+        </section>
+    
+</body>
+</html>

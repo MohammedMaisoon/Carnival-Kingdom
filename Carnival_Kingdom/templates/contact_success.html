@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Kingdom</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <script src="static/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Carnival Kingdom</h1>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li><a href="{{ url_for('rides')}}">Rides</a></li>
+                <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                <li><a href="{{ url_for('login')}}">Login</a></li>
+                <li><a href="{{ url_for('ticket_booking')}}">Book Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <p>Your message has been sent successfully!</p>
+        <p><a href="{{ url_for('contact') }}">Send another message</a></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Kingdom</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <script src="static/js/script.js" defer></script>
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Carnival Kingdom</h1> 
+            </div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('rides') }}">Rides</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('ticket_booking')}}">Book Tickets</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Carnival Kingdom!</h2>
+            <p>Your adventure starts here! Enjoy thrilling rides, exciting shows, and fun for all ages.</p>
+           <div class="logoimgage"><img src="static\css\image\index.avif" alt="carnival kingdom"></div> 
+            <a href="{{ url_for('rides')}}" class="cta-button">Explore the Rides</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>At Carnival Kingdom, we're dedicated to providing a fun and safe environment for people of all ages. Whether you're here for the adrenaline-pumping roller coasters or the family-friendly attractions, we promise an unforgettable experience!</p>
+        </div>
+    </section>
+    
+
+  
+   
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Carnival Kingdom. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>

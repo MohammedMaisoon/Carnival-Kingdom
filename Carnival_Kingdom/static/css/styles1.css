@@ -1,0 +1,32 @@
+/* Styling for the Navbar */
+.navbar {
+    background-color: #003366; /* Dark background color */
+    padding: 10px 20px; /* Padding around the navbar */
+    text-align: center; /* Center the navbar content */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox to display list items horizontally */
+    justify-content: center; /* Center the list items horizontally */
+}
+
+.nav-item {
+    margin: 0 15px; /* Add space between the list items */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-size: 18px; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #f39c12; /* Change text color on hover */
+}
+
+
